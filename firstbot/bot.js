@@ -13,9 +13,11 @@ client.on('ready', () => {
 });
 
 client.on('messageCreate', (msg) => {
+
   	if (msg.content === 'ping') {
   		msg.reply('pong');
   		pinger_ID = msg.author.id;
+  		
   	} else if (msg.content === 'who pinged?') {
   		msg.reply('<@' + pinger_ID + '> did.');
   	}
