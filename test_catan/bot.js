@@ -67,7 +67,7 @@ function haze(hazee, msg) {
 
 function idFromMention(mention) {
 	if (!mention) {
-	 return mention 
+		return mention 
 	};
 
 	return mention.substring(3, mention.length-1)
